@@ -28,6 +28,9 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a single-line script
         run: mvn deploy -s settings.xml
+        env:
+          GITHUB_USERNAME: x-access-token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
