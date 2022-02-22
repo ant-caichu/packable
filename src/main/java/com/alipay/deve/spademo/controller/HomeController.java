@@ -16,7 +16,7 @@ public class HomeController {
     private static final Logger log = LoggerFactory.getLogger(HomeController.class);
 
     HomeController() {
-        Employee employee = new Employee(1L, "caichu", "dev");
+        Employee employee = new Employee(1L, "caichu2", "dev");
         employees.add(employee);
     }
 
